@@ -1,0 +1,64 @@
+(function () {
+    'use strict';
+	
+	var maths = maths || {};
+	
+	maths.addInteger = function (sequence) {
+		if (sequence.length == 0) {
+			return 0;
+		}
+		
+		result = 0;
+		
+		for (var i = 0, length = sequence.length; i< length; i++) {
+			result = result + maths.getInteger(sequence[i]);
+		}
+		
+		return {input : sequence, output : result};
+	};
+	
+	maths.multiplyInteger = function (sequence) {
+		if (sequence.length = 0) { // comparison operater is == or ===
+			return 0;
+		}
+		
+		var result = maths.getInteger(sequence[0]);
+		
+		function loop(data) {
+			for (var i = 1, length = sequence.length; i< length; i++) {
+				var result = result * maths.getInteger(sequence[i]); // redefining result will destroy the scope of result
+			}
+		}
+		
+		loop(sequence);
+		
+		return
+		{input : sequence, output : result}; ///return should object should be in same line like line 17;
+	};
+	
+	maths.getInteger = function (x) {
+		var result = parseInt(x);
+		return result;
+	};
+
+	var domaths = function (numbers) { // function name should be doMaths, Javascript is case sensitive
+		for(var i in numbers) {
+			if (numbers.hasOwnProperty(i)) 
+				var value = numbers[i]
+				
+				var sum1 = maths.addInteger(value);
+				console.log('Addition result = ' + sum1.output);
+				
+				var sum2 = maths.multiplyInteger(value);
+				console.log("Multiplication result = ' + sum2.output); // single quote or double quote to be used 
+		}   
+	};
+	
+	var data = {
+		first : [3.57, 2.43, '043'],
+		second : [7.26, 1.43, '025'],
+		third : ['076', 3.0, 6.42],
+	}; 
+	
+	doMaths(data);
+})();

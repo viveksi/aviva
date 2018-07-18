@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    float: left;    
+    /* margin-top: 10px; */
+    height: 34px;
+    position: relative;  
+    color: blue;
+    /* border-bottom: 1px solid #126bb2; */
+}
+.logo{
+    background: #ffde02 none repeat scroll 0 0;  
+}
+
+.insurance{
+    width: 110px;
+    height: 20px;
+    float: right;
+    margin-top: 12px;
+    border-right: 1px solid #126bb2;
+}
+
+.saving{
+    width: 110px;
+    height: 20px;
+    float: right;
+    margin-top: 12px;   
+}
+
+.contact{
+    width: 32px;
+    height: 20px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-right: 1px solid #126bb2;
+}
+
+.myaccount{
+    width: 110px;
+    height: 20px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.homebg {
+    background-image: url(../images/offset_comp_134743.png);
+    border-bottom: 1px solid #126bb2; 
+    margin-top: 10px;  
+    float: left;
+    width: 100%;
+    height: 90%;
+}
+
+.home-content {
+    color: white;
+    margin-top: 40px; 
+    text-align: center    
+}
+
+.small-margin {   
+    margin-top: 20px;     
+}
+.btn-quote{
+    background-color:  #ffde02 !important;
+    color: #126bb2 !important;
+    font-size:10px !important;
+}

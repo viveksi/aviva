@@ -1,0 +1,38 @@
+<html ng-app="AvivaApp" ><head>
+    <title>Aviva Angular App</title>
+    <meta name="description" content="Responsive website using AngularJS - demo page">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+   
+    <!-- add javascripts -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-route/angular-route.js"></script>
+    <!-- <link href="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css" rel="stylesheet" type="text/css" /> -->
+    <script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>    
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./app.js"></script> 
+    <!-- <script src="./js/about.js"></script>      -->
+</head>
+<body ng-controller="MainController">
+   
+    <div id="main">  
+            <div class="row header" >        
+                    <div class="col-sm-1 pull-left"><img src="./images/AVIVA-Client-Logo.png" style="height:44px" /></div>
+                    <div class="col-sm-1 insurance ">Insurance</div>
+                    <div class="col-sm-2 saving">Saving &amp; Pensions</div>
+                    <div class="col-sm-6 ">&nbsp;</div>
+                    <div class="col-sm-2">
+                            <div class="glyphicon glyphicon-earphone contact"></div>
+                            <div class="glyphicon glyphicon-search contact"></div>
+                            <div class="myaccount">My Aviva</div>
+                    </div>
+            </div> 
+            <div ng-view class="row" ></div>
+       
+    </div>
+</body>
+
+
+</html>
